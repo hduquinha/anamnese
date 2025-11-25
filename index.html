@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Alinhamento e Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de Alinhamento e Perfil</h1>
+            <p>Equipe Instituto</p>
+        </header>
+        
+        <form id="multiStepForm">
+            <!-- Step 1: Informações Pessoais -->
+            <div class="step active" id="step1">
+                <h2>1. Informações Pessoais</h2>
+                <p class="description">Para te conhecer melhor.</p>
+                
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" name="nome" placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label>WhatsApp / Telefone</label>
+                    <input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label>Cidade e Estado</label>
+                    <input type="text" name="cidade" placeholder="Ex: São Paulo - SP">
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" class="next-btn">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Momento Atual -->
+            <div class="step" id="step2">
+                <h2>2. Momento Atual e Desafios</h2>
+                <p class="description">Para entender como a pessoa chega até vocês.</p>
+                
+                <div class="form-group">
+                    <label>1. Como você define o seu momento de vida profissional hoje?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="estagnado"> Estou estagnado e preciso urgentemente de uma mudança.</label>
+                        <label><input type="radio" name="q1" value="movimento"> Estou em movimento, mas sinto que falta um propósito maior.</label>
+                        <label><input type="radio" name="q1" value="bem"> Estou bem, mas quero construir uma nova fonte de renda/carreira.</label>
+                        <label><input type="radio" name="q1" value="transicao"> Estou em transição de carreira e buscando novas oportunidades.</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>2. Hoje, qual você diria que é a sua maior dificuldade ou barreira pessoal?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="financeira"> Financeira (preciso fazer dinheiro rápido).</label>
+                        <label><input type="radio" name="q2" value="emocional"> Emocional (ansiedade, medo ou falta de clareza).</label>
+                        <label><input type="radio" name="q2" value="relacionamentos"> Relacionamentos (dificuldade em lidar com pessoas ou família).</label>
+                        <label><input type="radio" name="q2" value="tempo"> Gestão de Tempo (procrastinação ou falta de foco).</label>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" class="prev-btn">Voltar</button>
+                    <button type="button" class="next-btn">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Percepção -->
+            <div class="step" id="step3">
+                <h2>3. Percepção sobre o Instituto</h2>
+                <p class="description">Para saber se ela entendeu o tamanho do negócio.</p>
+
+                <div class="form-group">
+                    <label>3. Quando você olha para o Instituto HOJE, o que você enxerga?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="escola"> Uma escola de cursos online.</label>
+                        <label><input type="radio" name="q3" value="movimento"> Um movimento de transformação pessoal.</label>
+                        <label><input type="radio" name="q3" value="oportunidade"> Uma oportunidade de negócio e franquia.</label>
+                        <label><input type="radio" name="q3" value="familia"> Uma família/comunidade de apoio.</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>4. Como você imagina que estará o Instituto daqui a 5 anos?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="solida"> Uma empresa sólida atuando forte no Brasil.</label>
+                        <label><input type="radio" name="q4" value="referencia"> A maior referência de desenvolvimento humano da América Latina.</label>
+                        <label><input type="radio" name="q4" value="multinacional"> Uma multinacional com franquias em vários países.</label>
+                        <label><input type="radio" name="q4" value="nao_sei"> Não consigo visualizar tão longe ainda.</label>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="prev-btn">Voltar</button>
+                    <button type="button" class="next-btn">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Perfil -->
+            <div class="step" id="step4">
+                <h2>4. Perfil de Atuação e Habilidade de Convite</h2>
+                <p class="description">Para medir a aptidão para o recrutamento/convite.</p>
+
+                <div class="form-group">
+                    <label>5. Dentro do nosso projeto, onde você sente que pode contribuir melhor no futuro?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="treinador"> Sendo um Treinador/Palestrante (estar no palco).</label>
+                        <label><input type="radio" name="q5" value="lider"> Sendo um Lider de Equipe (gerir pessoas e expandir franquias).</label>
+                        <label><input type="radio" name="q5" value="bastidor"> Sendo um Bastidor Estratégico (organização e suporte).</label>
+                        <label><input type="radio" name="q5" value="conector"> Sendo um Conector/Divulgador (trazer pessoas para o movimento).</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>6. O nosso trabalho envolve convidar pessoas para Lives Gratuitas de alto valor. O que você acha mais difícil nesse processo?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="medo_rejeicao"> O medo de ser ignorado ou rejeitado pela pessoa.</label>
+                        <label><input type="radio" name="q6" value="nao_saber_falar"> Não saber exatamente o que falar ou como explicar o convite.</label>
+                        <label><input type="radio" name="q6" value="medo_venda"> O medo de parecer que estou "vendendo" algo ou sendo chato.</label>
+                        <label><input type="radio" name="q6" value="sem_dificuldade"> Não vejo dificuldade, gosto de compartilhar coisas boas.</label>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="prev-btn">Voltar</button>
+                    <button type="button" class="next-btn">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Step 5: Expectativas -->
+            <div class="step" id="step5">
+                <h2>5. Expectativas e Visão de Futuro</h2>
+                <p class="description">Aqui deixamos aberto para pegar a "alma" da pessoa.</p>
+
+                <div class="form-group">
+                    <label>7. O que você espera, sinceramente, absorver e aprender convivendo conosco no Instituto?</label>
+                    <input type="text" name="q7" placeholder="Sua resposta curta aqui...">
+                </div>
+
+                <div class="form-group">
+                    <label>8. Se tudo der certo nesse projeto, descreva como você visualiza a SUA vida daqui a 5 anos (financeiramente, emocionalmente e profissionalmente).</label>
+                    <textarea name="q8" rows="5" placeholder="Sua resposta detalhada aqui..."></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="prev-btn">Voltar</button>
+                    <button type="button" class="submit-btn" onclick="alert('Formulário concluído! (Simulação)')">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
