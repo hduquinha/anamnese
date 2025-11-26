@@ -250,6 +250,18 @@ button {
     border-color: #ccc;
 }
 
+/* Error State */
+.form-group.error label {
+    color: #d32f2f;
+}
+
+.form-group.error input[type="text"],
+.form-group.error textarea,
+.form-group.error .options {
+    border-color: #d32f2f;
+    background-color: #ffebee;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
     .container {

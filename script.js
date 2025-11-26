@@ -16,11 +16,69 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
     }
 
+    function validateStep(stepIndex) {
+        const currentStepEl = steps[stepIndex];
+        const formGroups = currentStepEl.querySelectorAll('.form-group');
+        let isValid = true;
+        let firstErrorInput = null;
+
+        formGroups.forEach(group => {
+            const label = group.querySelector('label').innerText;
+            
+            // Check for "Outros" input visibility
+            const otherInputDiv = group.querySelector('.other-input');
+            if (otherInputDiv && otherInputDiv.style.display !== 'none') {
+                const otherInput = otherInputDiv.querySelector('input');
+                if (!otherInput.value.trim()) {
+                    isValid = false;
+                    if (!firstErrorInput) firstErrorInput = otherInput;
+                    group.classList.add('error'); // Add error class for styling
+                } else {
+                    group.classList.remove('error');
+                }
+                return;
+            }
+
+            // Check inputs
+            const inputs = group.querySelectorAll('input, textarea');
+            let groupHasValue = false;
+
+            if (inputs.length > 0) {
+                const type = inputs[0].type;
+
+                if (type === 'radio' || type === 'checkbox') {
+                    const checked = group.querySelectorAll('input:checked');
+                    if (checked.length > 0) groupHasValue = true;
+                } else {
+                    // Text, textarea
+                    if (inputs[0].value.trim() !== '') groupHasValue = true;
+                }
+            }
+
+            if (!groupHasValue) {
+                isValid = false;
+                if (!firstErrorInput) firstErrorInput = inputs[0];
+                group.classList.add('error');
+            } else {
+                group.classList.remove('error');
+            }
+        });
+
+        if (!isValid) {
+            alert('Por favor, preencha todos os campos obrigatórios antes de continuar.');
+            if (firstErrorInput) firstErrorInput.focus();
+        }
+
+        return isValid;
+    }
+
     nextBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            if (currentStep < steps.length - 1) {
-                currentStep++;
-                showStep(currentStep);
+            if (validateStep(currentStep)) {
+                if (currentStep < steps.length - 1) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
             }
         });
     });
@@ -75,6 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.removeAttribute('onclick'); 
         
         submitBtn.addEventListener('click', async () => {
+            if (!validateStep(currentStep)) {
+                return;
+            }
+
             const formData = {};
             
             // Helper to get values
