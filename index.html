@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Alinhamento e Perfil</title>
+    <title>Formulário de Aplicação - Instituto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Formulário de Alinhamento e Perfil</h1>
-            <p>Equipe Instituto</p>
+            <h1>Formulário de Aplicação</h1>
+            <h2>Instituto de Desenvolvimento e Liderança</h2>
+            <p class="intro-text">Preencha com atenção. Estamos selecionando líderes para construir o futuro.</p>
         </header>
         
         <form id="multiStepForm">
             <!-- Step 1: Informações Pessoais -->
             <div class="step active" id="step1">
-                <h2>1. Informações Pessoais</h2>
-                <p class="description">Para te conhecer melhor.</p>
-                
                 <div class="form-group">
                     <label>Nome Completo</label>
                     <input type="text" name="nome" placeholder="Seu nome completo">
@@ -41,9 +42,6 @@
 
             <!-- Step 2: Momento Atual -->
             <div class="step" id="step2">
-                <h2>2. Momento Atual e Desafios</h2>
-                <p class="description">Para entender como a pessoa chega até vocês.</p>
-                
                 <div class="form-group">
                     <label>1. Como você define o seu momento de vida profissional hoje?</label>
                     <div class="options">
@@ -106,9 +104,6 @@
 
             <!-- Step 3: Percepção -->
             <div class="step" id="step3">
-                <h2>3. Percepção sobre o Instituto</h2>
-                <p class="description">Para saber se ela entendeu o tamanho do negócio.</p>
-
                 <div class="form-group">
                     <label>5. Quando você olha para o Instituto HOJE, o que você enxerga?</label>
                     <div class="options">
@@ -151,9 +146,6 @@
 
             <!-- Step 4: Perfil -->
             <div class="step" id="step4">
-                <h2>4. Perfil de Atuação</h2>
-                <p class="description">Para medir a aptidão para o recrutamento/convite.</p>
-
                 <div class="form-group">
                     <label>7. Dentro do nosso projeto, onde você sente que pode contribuir melhor no futuro?</label>
                     <div class="options">
@@ -181,9 +173,6 @@
 
             <!-- Step 5: Metas e Sonhos -->
             <div class="step" id="step5">
-                <h2>5. Seu Quadro dos Sonhos e Metas</h2>
-                <p class="description">Vamos construir a visão do seu futuro.</p>
-
                 <div class="form-group">
                     <label>8. Qual veículo você almeja conquistar?</label>
                     <input type="text" name="q8" placeholder="Marca, modelo...">
