@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const formGroup = e.target.closest('.form-group');
             const optionsDiv = formGroup.querySelector('.options');
             const otherInputDiv = formGroup.querySelector('.other-input');
-            const radios = optionsDiv.querySelectorAll('input[type="radio"]');
+            const inputs = optionsDiv.querySelectorAll('input[type="radio"], input[type="checkbox"]');
             
             optionsDiv.style.display = 'block';
             otherInputDiv.style.display = 'none';
             
-            // Uncheck all radios in this group
-            radios.forEach(r => r.checked = false);
+            // Uncheck all inputs in this group
+            inputs.forEach(input => input.checked = false);
         });
     });
 });

@@ -60,14 +60,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label>2. Hoje, qual você diria que é a sua maior dificuldade ou barreira pessoal?</label>
+                    <label>2. Hoje, qual você diria que é a sua maior dificuldade ou barreira pessoal? (Pode marcar mais de uma)</label>
                     <div class="options">
-                        <label><input type="radio" name="q2" value="financeira"> Financeira (preciso fazer dinheiro rápido).</label>
-                        <label><input type="radio" name="q2" value="emocional"> Emocional (ansiedade, medo ou falta de clareza).</label>
-                        <label><input type="radio" name="q2" value="relacionamentos"> Relacionamentos (dificuldade em lidar com pessoas ou família).</label>
-                        <label><input type="radio" name="q2" value="tempo"> Gestão de Tempo (procrastinação ou falta de foco).</label>
-                        <label><input type="radio" name="q2" value="nao_sei"> Não sei.</label>
-                        <label><input type="radio" name="q2" value="outros" class="other-option"> Outros.</label>
+                        <label><input type="checkbox" name="q2" value="financeira"> Financeira (preciso fazer dinheiro rápido).</label>
+                        <label><input type="checkbox" name="q2" value="emocional"> Emocional (ansiedade, medo ou falta de clareza).</label>
+                        <label><input type="checkbox" name="q2" value="relacionamentos"> Relacionamentos (dificuldade em lidar com pessoas ou família).</label>
+                        <label><input type="checkbox" name="q2" value="tempo"> Gestão de Tempo (procrastinação ou falta de foco).</label>
+                        <label><input type="checkbox" name="q2" value="nao_sei"> Não sei.</label>
+                        <label><input type="checkbox" name="q2" value="outros" class="other-option"> Outros.</label>
                     </div>
                     <div class="other-input" style="display: none;">
                         <input type="text" name="q2_outros" placeholder="Digite sua resposta...">
@@ -81,12 +81,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label>4. Quanto tempo por dia você tem disponível HOJE para se dedicar ao projeto?</label>
+                    <label>4. Quanto tempo por dia você tem disponível a partir de agora para se dedicar ao projeto?</label>
                     <div class="options">
-                        <label><input type="radio" name="q4" value="menos_1"> Menos de 1 hora por dia.</label>
-                        <label><input type="radio" name="q4" value="1-2"> 1 a 2 horas por dia.</label>
-                        <label><input type="radio" name="q4" value="2-4"> 2 a 4 horas por dia.</label>
-                        <label><input type="radio" name="q4" value="integral"> Disponibilidade integral.</label>
+                        <label><input type="radio" name="q4" value="sem_tempo"> Sem tempo disponível no momento.</label>
+                        <label><input type="radio" name="q4" value="menos_30"> Menos de 30 minutos por dia.</label>
+                        <label><input type="radio" name="q4" value="30_60"> De 30 minutos a 1 hora por dia.</label>
+                        <label><input type="radio" name="q4" value="1_2"> De 1 a 2 horas por dia.</label>
+                        <label><input type="radio" name="q4" value="2_4"> De 2 a 4 horas por dia.</label>
+                        <label><input type="radio" name="q4" value="integral"> Mais de 4 horas por dia (Integral).</label>
                         <label><input type="radio" name="q4" value="nao_sei"> Não sei.</label>
                         <label><input type="radio" name="q4" value="outros" class="other-option"> Outros.</label>
                     </div>
@@ -105,15 +107,15 @@
             <!-- Step 3: Percepção -->
             <div class="step" id="step3">
                 <div class="form-group">
-                    <label>5. Quando você olha para o Instituto HOJE, o que você enxerga?</label>
+                    <label>5. Quando você olha para o Instituto HOJE, o que você enxerga? (Pode marcar mais de uma)</label>
                     <div class="options">
-                        <label><input type="radio" name="q5" value="hibrido"> Uma escola de cursos online e presenciais.</label>
-                        <label><input type="radio" name="q5" value="franquia"> Uma oportunidade de negócio no modelo de franquia.</label>
-                        <label><input type="radio" name="q5" value="comunidade"> Um ambiente de networking, amizades e apoio mútuo.</label>
-                        <label><input type="radio" name="q5" value="movimento"> Um movimento de transformação social e pessoal.</label>
-                        <label><input type="radio" name="q5" value="ecossistema"> Um ecossistema completo de formação de líderes.</label>
-                        <label><input type="radio" name="q5" value="nao_sei"> Não sei.</label>
-                        <label><input type="radio" name="q5" value="outros" class="other-option"> Outros.</label>
+                        <label><input type="checkbox" name="q5" value="hibrido"> Uma escola de cursos online e presenciais.</label>
+                        <label><input type="checkbox" name="q5" value="franquia"> Uma oportunidade de negócio no modelo de franquia.</label>
+                        <label><input type="checkbox" name="q5" value="comunidade"> Um ambiente de networking, amizades e apoio mútuo.</label>
+                        <label><input type="checkbox" name="q5" value="movimento"> Um movimento de transformação social e pessoal.</label>
+                        <label><input type="checkbox" name="q5" value="ecossistema"> Um ecossistema completo de formação de líderes.</label>
+                        <label><input type="checkbox" name="q5" value="nao_sei"> Não sei.</label>
+                        <label><input type="checkbox" name="q5" value="outros" class="other-option"> Outros.</label>
                     </div>
                     <div class="other-input" style="display: none;">
                         <input type="text" name="q5_outros" placeholder="Digite sua resposta...">
@@ -127,7 +129,7 @@
                         <label><input type="radio" name="q6" value="falencia"> O projeto pode não existir mais ou ter dado errado.</label>
                         <label><input type="radio" name="q6" value="pequena"> Será uma empresa pequena, apenas mais uma no mercado.</label>
                         <label><input type="radio" name="q6" value="nacional"> Será uma empresa consolidada e respeitada no Brasil.</label>
-                        <label><input type="radio" name="q6" value="referencia"> Será a maior referência da América Latina.</label>
+                        <label><input type="radio" name="q6" value="referencia"> Será a maior referência da América Latina de inteligência emocional e comunicação de liderança.</label>
                         <label><input type="radio" name="q6" value="multinacional"> Será uma multinacional impactando vidas em todo o mundo.</label>
                         <label><input type="radio" name="q6" value="nao_sei"> Não sei / Não tenho uma visão formada ainda.</label>
                         <label><input type="radio" name="q6" value="outros" class="other-option"> Outros.</label>
@@ -147,17 +149,18 @@
             <!-- Step 4: Perfil -->
             <div class="step" id="step4">
                 <div class="form-group">
-                    <label>7. Dentro do nosso projeto, onde você sente que pode contribuir melhor no futuro?</label>
+                    <label>7. Dentro do nosso projeto, onde você sente que pode contribuir melhor no futuro? (Pode marcar mais de uma)</label>
                     <div class="options">
-                        <label><input type="radio" name="q7" value="treinador"> Treinador / Palestrante (Palco).</label>
-                        <label><input type="radio" name="q7" value="lideranca"> Liderança de Equipes e Gestão de Pessoas.</label>
-                        <label><input type="radio" name="q7" value="gestao"> Gestão Operacional e Administrativa (Bastidores).</label>
-                        <label><input type="radio" name="q7" value="expansao"> Expansão Comercial e Venda de Franquias.</label>
-                        <label><input type="radio" name="q7" value="vendas"> Vendas Diretas e Atendimento ao Cliente.</label>
-                        <label><input type="radio" name="q7" value="marketing"> Marketing, Redes Sociais e Comunicação.</label>
-                        <label><input type="radio" name="q7" value="eventos"> Organização de Eventos e Logística.</label>
-                        <label><input type="radio" name="q7" value="nao_sei"> Não sei.</label>
-                        <label><input type="radio" name="q7" value="outros" class="other-option"> Outros.</label>
+                        <label><input type="checkbox" name="q7" value="treinador"> Treinador / Palestrante (Palco).</label>
+                        <label><input type="checkbox" name="q7" value="terapeuta"> Terapeuta / Fazer acompanhamento de pessoas.</label>
+                        <label><input type="checkbox" name="q7" value="lideranca"> Liderança de Equipes e Gestão de Pessoas.</label>
+                        <label><input type="checkbox" name="q7" value="gestao"> Gestão Operacional e Administrativa (Bastidores).</label>
+                        <label><input type="checkbox" name="q7" value="expansao"> Expansão Comercial e Venda de Franquias.</label>
+                        <label><input type="checkbox" name="q7" value="vendas"> Vendas Diretas e Atendimento ao Cliente.</label>
+                        <label><input type="checkbox" name="q7" value="marketing"> Marketing, Redes Sociais e Comunicação.</label>
+                        <label><input type="checkbox" name="q7" value="eventos"> Organização de Eventos e Logística.</label>
+                        <label><input type="checkbox" name="q7" value="nao_sei"> Não sei.</label>
+                        <label><input type="checkbox" name="q7" value="outros" class="other-option"> Outros.</label>
                     </div>
                     <div class="other-input" style="display: none;">
                         <input type="text" name="q7_outros" placeholder="Digite sua resposta...">
@@ -174,23 +177,23 @@
             <!-- Step 5: Metas e Sonhos -->
             <div class="step" id="step5">
                 <div class="form-group">
-                    <label>8. Qual veículo você almeja conquistar?</label>
-                    <input type="text" name="q8" placeholder="Marca, modelo...">
+                    <label>8. Quais são seus principais sonhos e objetivos de vida para os próximos anos?</label>
+                    <textarea name="q8" rows="3" placeholder="Descreva seus objetivos pessoais, profissionais e financeiros..."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>9. Descreva sua moradia ideal.</label>
-                    <textarea name="q9" rows="3" placeholder="Localização, estilo..."></textarea>
+                    <label>9. O que você sente que te falta hoje para realizar esses sonhos?</label>
+                    <textarea name="q9" rows="3" placeholder="Conhecimento, oportunidades, ambiente, mentoria..."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>10. Qual destino internacional você deseja visitar?</label>
-                    <input type="text" name="q10" placeholder="País, cidade...">
+                    <label>10. Como você acredita que o Instituto pode te ajudar a conquistar esses objetivos?</label>
+                    <textarea name="q10" rows="3" placeholder="De que forma podemos contribuir com sua jornada..."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>11. Quais familiares você pretende apoiar financeiramente?</label>
-                    <textarea name="q11" rows="2" placeholder="Nomes e parentesco..."></textarea>
+                    <label>11. Por que você acredita que deve ser selecionado para caminhar conosco?</label>
+                    <textarea name="q11" rows="3" placeholder="Fale sobre seu comprometimento..."></textarea>
                 </div>
 
                 <div class="form-group">
