@@ -166,6 +166,27 @@ button:active {
     background-color: var(--gray-light);
 }
 
+.other-input {
+    margin-top: 10px;
+}
+
+.btn-back-options {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+}
+
+.btn-back-options:hover {
+    background-color: #f4f4f4;
+    color: #333;
+    transform: none;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 480px) {
     .container {

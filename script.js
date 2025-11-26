@@ -33,4 +33,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Handle "Outros" functionality
+    const otherRadios = document.querySelectorAll('.other-option');
+    
+    otherRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                const formGroup = e.target.closest('.form-group');
+                const optionsDiv = formGroup.querySelector('.options');
+                const otherInputDiv = formGroup.querySelector('.other-input');
+                
+                optionsDiv.style.display = 'none';
+                otherInputDiv.style.display = 'block';
+                otherInputDiv.querySelector('input').focus();
+            }
+        });
+    });
+
+    // Handle "Voltar" buttons
+    const backButtons = document.querySelectorAll('.btn-back-options');
+    backButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const formGroup = e.target.closest('.form-group');
+            const optionsDiv = formGroup.querySelector('.options');
+            const otherInputDiv = formGroup.querySelector('.other-input');
+            const radios = optionsDiv.querySelectorAll('input[type="radio"]');
+            
+            optionsDiv.style.display = 'block';
+            otherInputDiv.style.display = 'none';
+            
+            // Uncheck all radios in this group
+            radios.forEach(r => r.checked = false);
+        });
+    });
 });
